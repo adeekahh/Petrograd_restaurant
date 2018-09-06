@@ -1,0 +1,512 @@
+*{
+	margin:0;
+	padding:0;
+  /*border: grey 1px solid;*/
+	font-family:"Alegreya";
+	}
+
+.hide{
+	display: none !important;
+
+}
+
+nav{
+	position: fixed;
+	width:100%;
+	background-color: black;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+body{
+	background-color: black;
+	color:white;
+/*	cursor:url('img/cursor.png'), auto;*/
+}
+/*TOP*/
+.top-container{
+	max-width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.cd-top{
+	color: white;
+	font-size: 36px;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+/*------------------------------MOBILE VERSION 414x736 IPHONE 6/7/8 PLUS ------------*/
+
+/*----------------------------------MOBILE NAVIGATION -------------------------------*/
+
+			a{
+				font-size:1em;
+					color:white;
+				margin: 1em;
+				margin-left: auto;
+				margin-right: auto;
+				text-transform: capitalize;
+				letter-spacing: 0.2em;
+				text-decoration: none;
+			}
+
+
+nav{
+ max-height: 0;
+ overflow: hidden;
+flex-direction: column;
+ position:fixed;
+ display: flex;
+ justify-content: space-around;
+ z-index:100;
+
+}
+
+
+input:checked ~ nav{
+ max-height: 500px;
+}
+
+input {
+ display: none;
+ z-index:100;
+}
+input:checked ~ nav{
+ max-height: 500px;
+}
+
+.burgericon{
+	font-size: 2em;
+	position: fixed;
+	margin-top:0.5em;
+	margin-left:0.2em;
+	padding:0.5em;
+	z-index: 101;
+	background-color: black;
+	color:yellow;
+}
+
+/*ul{
+		display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+} */
+/*
+li a{
+	padding: 1em;
+	text-decoration:none;
+}
+
+li{
+	margin-top:2em;
+	margin-bottom: 2em;
+}
+
+ul a{
+	font-family:"Alegreya";
+	color: white;
+}
+*/
+.links{
+	width: 100vw;
+}
+*/
+/*COLLAGE*/
+
+.collageImg{
+	position:absolute;
+	transform: translate(-50%, -50%) scale(0.5);
+	overflow: hidden;
+	z-index: -1;
+}
+
+.background{
+	background-color: black;
+}
+
+/*-------------------------------------------MAIN SCREEN -------------------------------------*/
+
+
+.menu section{
+		display: grid;
+	  grid-template-columns: 1fr ;
+
+
+	}
+
+
+.main-screen{
+	height: 100vh;
+	max-width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid gray;
+	overflow: hidden;
+	position: relative;
+}
+
+.main-screen-title{
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
+
+}
+
+.main-title{
+	text-align: center;
+	margin-top:2em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid yellow;
+	letter-spacing: 5px;
+	background-color: black;
+	padding:1em;
+	z-index: 2;
+}
+
+/* ------------------------------------------ABOUT SCREEN ------------------------------------*/
+.about-screen{
+	height:30em;
+	border-top: 1px solid grey;
+	padding-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+.about-title{
+	text-align: center;
+	max-width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid grey;
+
+}
+
+.about-description{
+	text-align: center;
+	margin-top: 4em;
+	letter-spacing: 5px;
+	font-size:20px;
+}
+
+/*--------------------------------------------MENU-------------------------------------*/
+.menu-title-container{
+	background-color: black;
+
+	}
+.menu-title{
+	max-width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 1px solid grey;
+}
+
+section h2{
+
+	grid-column: 1/-1;
+
+}
+
+/*-----------------------------------------MAINS --------------------------------------*/
+
+.mains-title-container{
+	max-width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:em;
+	margin-bottom: 2em;
+}
+.mains-title{
+	text-align: center;
+	margin-top:2em;
+	text-transform: uppercase;
+}
+
+/*---------------------------------------DRINKS----------------------------------------*/
+
+.drinks-title-container{
+	max-width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:2em;
+	margin-bottom: 2em;
+}
+.drinks-title{
+	text-align: center;
+
+}
+
+
+/*--------------------------------------------MENU ITEMS--------------------------------------*/
+.menu-item{
+	margin-left: auto;
+	margin-right: auto;
+	border: grey 1px solid;
+	max-width: 330px;
+	margin-top:2em;
+	margin-bottom: 2em;
+
+}
+
+/*Upper-part*/
+.food-name{
+	text-align: center;
+	letter-spacing: 3px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+}
+
+.vegetarian{
+	display: flex;
+	float:right;
+}
+
+.vegetarian-text{
+
+	padding:0.5em;
+}
+
+.vegetarian-label{
+	color:#62FF08;
+	padding:0.5em;
+}
+
+/*IMAGES ON TOP OF EACH OTHER*/
+.middle-part {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.food-image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.discount-anim {
+  position: absolute;
+  top: 0;
+  left: 0;
+	z-index: 1;
+	max-width: 200px;
+	border:none;
+}
+
+
+.soldout-anim {
+  position: absolute;
+  top: 15px;
+  left: 0;
+	z-index: 1;
+	max-width: 330px;
+	border:none;
+}
+
+
+/*Bottom-part*/
+.short-description{
+	grid-area: short-description;
+	margin:0.5em;
+	margin-top:auto;
+	margin-bottom: auto;
+}
+.price{
+	grid-area: price;
+	text-align: right;
+	text-decoration: line-through;
+	text-decoration-color: #FF0000;
+	margin: 0.5em;
+	font-size: 2em ;
+
+}
+
+.no-discount{
+	text-decoration: none;
+}
+
+
+.discount-price{
+	grid-area: discount-price;
+	text-align: right;
+	margin: 0.5em;
+}
+
+
+.bottom-part{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"short-description price"
+		"short-description discount-price";
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.alcohol-content{
+	margin:0.5em;
+	font-size:24px;
+}
+
+.cross{
+	color: #FF0000;}
+
+
+/*--------------------------------------------------------CONTACT---------------------------------------------------------------------------*/
+
+.contact-title-container{
+	max-width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+}
+.contact-title{
+	text-align: center;
+	border-bottom: 1px solid grey;
+	margin-top:2em;
+}
+
+.location-title-container{
+	max-width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+}
+.location-title{
+	text-align: center;
+}
+
+
+
+.location-description{
+	text-align: center;
+	margin: 2em;
+}
+
+.location{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 330px;
+	margin-top:2em;
+	margin-bottom: 2em;
+}
+
+/*----------------------------------------------FOOTER--------------------------------*/
+footer{
+	text-align: center;
+}
+
+footer p{
+	padding: 2em;
+	color:grey;
+	font-family: sans-serif;
+	font-size:10px;
+}
+
+/*--------------------------TABLET VERSION -------------------------------------------*/
+
+@media screen and (min-width: 700px){
+
+	.menu section{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+/*---------------------DESKTOP VERSION 1920*1080--------------------------------------*/
+
+@media screen and (min-width: 1200px){
+
+	nav{
+ max-height: 0;
+ overflow: hidden;
+ position:fixed;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ z-index:100;
+
+}
+
+
+
+
+.burgericon{
+	display:none;
+	}
+
+
+
+
+	.menu section{
+		display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+
+
+	}
+
+	.drinks{
+		display: grid;
+	  grid-template-columns: 1fr 1fr;
+
+
+	}
+
+	.location{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 650px;
+		margin-bottom:4em;
+	}
+
+	.location-title-main{
+		margin: 4em;
+	}
+
+	.location-description{
+		    margin-top: auto;
+    margin-bottom: auto;
+	}
+
+	.mains-title{
+		margin:4em;
+	}
+
+	.drinks-title{
+		margin:4em;
+	}
+
+	.contacts{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 4em;
+		margin-top: 4em;
+	}
+
+	.drinks{
+		margin-bottom: 4em;
+	}
+
+
+
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Ultra" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	  <link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="img/logo.png">
+		<title>Petrograd Restaurant &#8482;</title>
+</head>
+
+<body>
+
+        <!--NAVIGATION-->
+	<div class="navigation">
+  <header>
+	<label class="burgericon" for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle" >
+		<nav>
+		<a href="#" id="allLink">All</a>
+				<!--<li ><a href="#about" >ABOUT</a></li>
+        <li ><a href="#menu" ></a></li>
+        <li ><a href="#contact" >CONTACT</a></li> -->
+    </nav>
+  </header>
+	</div>
+	<!-- MAIN TITLE-->
+	<div id="0"  class="main-screen">
+		<div class="main-screen-title">
+
+		<h1 class="main-title">“Ask not what you can do for your country. Ask what’s for lunch.”</h1>
+
+		</div>
+	</div>
+
+	<!-- ABOUT US -->
+	<div id="about" class="about-screen">
+
+		<h2 class="about-title">Petrograd &#8482; believe that good food is about</h2>
+
+		<p class="about-description"> Passion </p>
+
+		<p class="about-description"> Expertise </p>
+
+		<p class="about-description">Love</p>
+
+	</div>
+
+	<!--MENU --><div class="background">
+	<div id="menu" class="menu-title-container">
+		<h2 class="menu-title">MENU</h2>
+	</div>
+	<!-- MAINS -->
+	<!--
+	<div class="mains-title-container">
+		<h2 class="mains-title">MAINS</h2>
+	</div>
+	<!--
+	<div class="mains">
+	<div class="menu-item">
+
+		<h3 class="food-name"> </h3>
+		<div class="vegetarian">
+			<p class="vegetarian-text"></p>
+			<p class="vegetarian-label"></p>
+		</div>
+		<div class="middle-part">
+			<img class="discount-anim" src="img/discount.gif" alt="discount-animation">
+			<img class="food-image" src="img/dynryp-sm.jpg">
+		</div>
+
+	<div class="bottom-part">
+		<p class="short-description"></p>
+		<p class="price"></p>
+		<p class="discount-price"></p>
+		</div>
+	</div>
+	</div>
+	-->
+	<div class="menu">
+
+	</div>
+
+	<template id="foodTemplate">
+	<div class="menu-item">
+	<h2 class="food-name">Name</h2>
+	<div class="vegetarian">
+	<p class="vegetarian-text"> Vegetarian: </p>
+  <p class="vegetarian-label"></p>
+	</div>
+
+	<div class="middle-part">
+	<img class="food-image" alt="" />
+	<img class="discount-anim" src="img/discount.gif">
+	<img class="soldout-anim" src="img/soldout.gif">
+		</div>
+		<div class="bottom-container">
+	<div class="bottom-part">
+	<p class="short-description">Short description</p>
+	<p class="price">price</p>
+	<p class="discount-price">discount</p>
+  </div>
+			</div>
+		</div>
+	</template>
+
+
+	<!-- OUT OF ORDER FOR TRY :P
+	<div class="menu-item">
+
+		<h3 class="food-name">Steak with vegetables</h3>
+		<div class="vegetarian">
+			<p class="vegetarian-text">Vegetarian</p>
+			<p class="vegetarian-label cross">&#10006;</p>
+		</div>
+		<div class="middle-part">
+			<img class="discount-anim" src="img/discount.gif" alt="discount-animation">
+			<img class="food-image" src="img/boef-sm.jpg">
+		</div>
+
+	<div class="bottom-part">
+		<p class="short-description">Diplomat-bøf <br> med grønt</p>
+		<p class="price">179 ₽</p>
+		<p class="discount-price">159	₽</p>
+		</div>
+	</div>
+
+		</div>
+
+	<!-- DRINKS --
+
+	<div class="drinks-title-container">
+		<h2 class="drinks-title">DRINKS</h2>
+	</div>
+
+<div class="drinks">
+
+<div class="menu-item">
+
+		<h3 class="food-name">Bochkarev beer</h3>
+		<div class="vegetarian">
+			<p class="alcohol-content">5,5 %</p>
+		</div>
+		<div class="middle-part">
+			<img class="food-image" src="img/bochkarev-sm.jpg">
+		</div>
+
+	<div class="bottom-part">
+		<p class="short-description">En halv liter <br> Bochkarev fadøl</p>
+		<p class="price no-discount">55	₽</p>
+
+		</div>
+	</div>
+
+
+	<div class="menu-item">
+
+		<h3 class="food-name">Vodka ~ Voda</h3>
+		<div class="vegetarian">
+			<p class="alcohol-content">60	₽</p>
+		</div>
+		<div class="middle-part">
+			<img class="food-image" src="img/voda-sm.jpg">
+		</div>
+
+	<div class="bottom-part">
+		<p class="short-description">vodka i rigelige mængder</p>
+		<p class="price no-discount">19 kr.</p>
+
+		</div>
+	</div>
+
+	</div>
+
+
+	<!------------------------------------------------------EnD OF MENU ---------------------------------------------------------------------->
+
+<!------------------------------------------------------- CONTACT --------------------------------------------------------------------------->
+	<div id="contact" class="contact-title-container">
+		<h2 class="contact-title">CONTACT</h2>
+	</div>
+
+	<div class="location-title-container">
+		<h2 class="location-title location-title-main">LOCATION</h2>
+		</div>
+
+
+
+
+	<div class="location">
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1871.3531250792419!2d129.71580151598604!3d62.028509398769536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5bf64a6928208e03%3A0x790d29cedf9ef8d2!2sUlitsa+Lomonosova%2C+45%2C+Yakutsk%2C+Sakha+(Yakutiya)+Republits%2C+Oroszorsz%C3%A1g%2C+677027!5e0!3m2!1shu!2sdk!4v1535546756087" width="330" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<p class="location-description">Ulitsa Lomonosova, 45, Yakutsk, Sakha (Yakutiya) Republits, Russia <br>677027</p>
+	</div>
+	<div class="contacts">
+	<div class="location-title-container">
+		<h2 class="location-title">CALL US</h2>
+		<p class="location-description">+7 495 606 36 02</p>
+	</div>
+
+	<div class="location-title-container">
+		<h2 class="location-title">WRITE TO US</h2>
+		<p class="location-description">playwiththebear@petrograd.com</p>
+	</div>
+	</div>
+	<!--TO THE TOP-->
+	<div class="top-container">
+	<a href="#0" class="cd-top js-cd-top">&#8657;</a>
+	</div>
+	<!-- FOOTER -->
+
+	<footer>
+	<p>All Rights Reserved &copy;</p>
+
+	</footer>
+		</div>
+<script src="script.js"></script>
+</body>
+</html>
