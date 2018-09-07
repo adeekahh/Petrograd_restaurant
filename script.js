@@ -73,6 +73,9 @@
 		if (classList.length > 1) removeClass(el, classList.slice(1).join(' '));
 	}
 })();
+
+
+
 // JSON
 const link = "https://kea-alt-del.dk/t5/api/productlist";
 const catLink = "https://kea-alt-del.dk/t5/api/categories";
@@ -80,11 +83,17 @@ const main = document.querySelector(".menu");
 const imgbase = "https://kea-alt-del.dk/t5/site/imgs/";
 const nav = document.querySelector("nav");
 const allLink = document.querySelector("#allLink");
+const modal = document.querySelector("#modal");
+const pLink ="http://kea-alt-del.dk/t5/api/product?id=";
 const template = document.querySelector("#foodTemplate").content;
+
 allLink.addEventListener("click", (e) => {
 	filterBy("all");
 	e.preventDefault();
 });
+
+
+
 //console.log(allLink);
 fetch(catLink).then(promise => promise.json()).then(data => buildCategories(data));
 
@@ -126,6 +135,8 @@ function show(plist) {
 		clone.querySelector("h2").textContent = product.name;
 		clone.querySelector(".short-description").textContent = product.shortdescription
 		clone.querySelector(".price").textContent = product.price + " kr. ";
+		clone.querySelector("button").addEventListener("click", ()=>fetch(pLink+product.id).then(promise=>promise.json()).then(data=>showDetails(data)));
+
 		clone.querySelector("img").src = imgbase + "medium/" + product.image + "-md.jpg";
 		//discount-animation
 		if (product.discount == 0) {
@@ -160,6 +171,19 @@ function show(plist) {
 	});
 }
 
+function showDetails(product){
+
+	console.log(product.longdescription);
+
+	modal.querySelector("h2").textContent = product.name;
+	modal.querySelector("img").src = imgbase + "medium/" + product.image + "-md.jpg";
+	modal.querySelector("p").textContent = product.longdescription;
+	modal.classList.remove('hide');
+
+}
+
+modal.addEventListener("click", ()=>modal.classList.add("hide"));
+
 function checkTheBox(x) {
 	if (x.matches) {
 		document.getElementById("toggle").checked = true;
@@ -167,7 +191,16 @@ function checkTheBox(x) {
 }
 var x = window.matchMedia("(min-width: 1200px)")
 checkTheBox(x) // Call listener function at run time
-x.addListener(checkTheBox); //
+x.addListener(checkTheBox);
+
+
+
+//MODAL
+
+
+
+
+
 // COLLAGE
 /*
 const images = [

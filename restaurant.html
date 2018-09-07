@@ -19,9 +19,6 @@
   <input type="checkbox" id="toggle" >
 		<nav>
 		<a href="#" id="allLink">All</a>
-				<!--<li ><a href="#about" >ABOUT</a></li>
-        <li ><a href="#menu" ></a></li>
-        <li ><a href="#contact" >CONTACT</a></li> -->
     </nav>
   </header>
 	</div>
@@ -51,33 +48,6 @@
 	<div id="menu" class="menu-title-container">
 		<h2 class="menu-title">MENU</h2>
 	</div>
-	<!-- MAINS -->
-	<!--
-	<div class="mains-title-container">
-		<h2 class="mains-title">MAINS</h2>
-	</div>
-	<!--
-	<div class="mains">
-	<div class="menu-item">
-
-		<h3 class="food-name"> </h3>
-		<div class="vegetarian">
-			<p class="vegetarian-text"></p>
-			<p class="vegetarian-label"></p>
-		</div>
-		<div class="middle-part">
-			<img class="discount-anim" src="img/discount.gif" alt="discount-animation">
-			<img class="food-image" src="img/dynryp-sm.jpg">
-		</div>
-
-	<div class="bottom-part">
-		<p class="short-description"></p>
-		<p class="price"></p>
-		<p class="discount-price"></p>
-		</div>
-	</div>
-	</div>
-	-->
 	<div class="menu">
 
 	</div>
@@ -100,78 +70,30 @@
 	<p class="short-description">Short description</p>
 	<p class="price">price</p>
 	<p class="discount-price">discount</p>
+	<button class="modalButton">Details</button>
   </div>
 			</div>
 		</div>
 	</template>
 
+	<!-- -------------------------MODAL ------------->
 
-	<!-- OUT OF ORDER FOR TRY :P
-	<div class="menu-item">
+	<div id="modal" class="modal hide">
 
-		<h3 class="food-name">Steak with vegetables</h3>
-		<div class="vegetarian">
-			<p class="vegetarian-text">Vegetarian</p>
-			<p class="vegetarian-label cross">&#10006;</p>
-		</div>
-		<div class="middle-part">
-			<img class="discount-anim" src="img/discount.gif" alt="discount-animation">
-			<img class="food-image" src="img/boef-sm.jpg">
-		</div>
 
-	<div class="bottom-part">
-		<p class="short-description">Diplomat-bøf <br> med grønt</p>
-		<p class="price">179 ₽</p>
-		<p class="discount-price">159	₽</p>
-		</div>
-	</div>
+		<div class="menu-item">
+	<span class="exit-modal"> &#10006; </span>
+	<aside id="modal-content">
 
-		</div>
+		<h2 class="modal-name food-name">food-name</h2>
+		<img class="food-image">
+		<p class="long-description">long description</p>
 
-	<!-- DRINKS --
-
-	<div class="drinks-title-container">
-		<h2 class="drinks-title">DRINKS</h2>
-	</div>
-
-<div class="drinks">
-
-<div class="menu-item">
-
-		<h3 class="food-name">Bochkarev beer</h3>
-		<div class="vegetarian">
-			<p class="alcohol-content">5,5 %</p>
-		</div>
-		<div class="middle-part">
-			<img class="food-image" src="img/bochkarev-sm.jpg">
-		</div>
-
-	<div class="bottom-part">
-		<p class="short-description">En halv liter <br> Bochkarev fadøl</p>
-		<p class="price no-discount">55	₽</p>
-
+	</aside>
 		</div>
 	</div>
 
 
-	<div class="menu-item">
-
-		<h3 class="food-name">Vodka ~ Voda</h3>
-		<div class="vegetarian">
-			<p class="alcohol-content">60	₽</p>
-		</div>
-		<div class="middle-part">
-			<img class="food-image" src="img/voda-sm.jpg">
-		</div>
-
-	<div class="bottom-part">
-		<p class="short-description">vodka i rigelige mængder</p>
-		<p class="price no-discount">19 kr.</p>
-
-		</div>
-	</div>
-
-	</div>
 
 
 	<!------------------------------------------------------EnD OF MENU ---------------------------------------------------------------------->
