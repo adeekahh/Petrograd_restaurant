@@ -74,6 +74,54 @@
 	}
 })();
 
+/*
+const images = [
+	"1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg", "25.jpg", "26.jpg", "27.jpg", "28.jpg", "29.jpg", "30.jpg"]
+
+
+let i = 0
+
+
+function placeImage(x, y) {
+
+	const nextImage = images[i]
+
+	const img = document.createElement("img")
+	img.setAttribute("src", nextImage)
+	img.style.left = x + "px"
+	img.style.top = y + "px"
+
+	document.querySelector(".main-screen").appendChild(img)
+
+	img.classList.add("collageImg")
+
+	i = i + 1
+
+	if (i >= images.length){
+
+		i = 0
+
+	}
+
+}
+
+document.addEventListener("click", function(event){
+
+	event.preventDefault()
+	placeImage(event.pageX, event.pageY)
+
+})
+
+document.addEventListener("touchend", function(event){
+
+	event.preventDefault()
+	placeImage(event.pageX, event.pageY)
+
+}
+													)
+
+
+*/
 
 
 // JSON
@@ -202,51 +250,7 @@ x.addListener(checkTheBox);
 
 
 // COLLAGE
-/*
-const images = [
-	"1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg", "25.jpg", "26.jpg", "27.jpg", "28.jpg", "29.jpg", "30.jpg"]
 
 
-let i = 0
 
 
-function placeImage(x, y) {
-
-	const nextImage = images[i]
-
-	const img = document.createElement("img")
-	img.setAttribute("src", nextImage)
-	img.style.left = x + "px"
-	img.style.top = y + "px"
-
-	document.querySelector(".main-screen").appendChild(img)
-
-	img.classList.add("collageImg")
-
-	i = i + 1
-
-	if (i >= images.length){
-
-		i = 0
-
-	}
-
-}
-
-document.addEventListener("click", function(event){
-
-	event.preventDefault()
-	placeImage(event.pageX, event.pageY)
-
-})
-
-document.addEventListener("touchend", function(event){
-
-	event.preventDefault()
-	placeImage(event.pageX, event.pageY)
-
-}
-													)
-
-
-		*/

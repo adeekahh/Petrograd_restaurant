@@ -13,8 +13,7 @@
 	font-family:"Alegreya";
 	}
 
-button{
-
+.modalButton{
   grid-column: 1/-1;
   margin-top: 2em;
   background-color: black;
@@ -166,10 +165,10 @@ ul a{
 /*COLLAGE*/
 
 .collageImg{
-	position:absolute;
+	position:absolute !important;
 	transform: translate(-50%, -50%) scale(0.5);
 	overflow: hidden;
-	z-index: -1;
+	z-index: 1;
 }
 
 .background{
@@ -196,6 +195,10 @@ ul a{
 	border: 1px solid gray;
 	overflow: hidden;
 	position: relative;
+	background-image: url(intro-bg.svg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: 50% 50%
 }
 
 .main-screen-title{
@@ -221,12 +224,16 @@ ul a{
 
 /* ------------------------------------------ABOUT SCREEN ------------------------------------*/
 .about-screen{
-	height:30em;
+	height:80vh;
 	border-top: 1px solid grey;
 	padding-top: 3em;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: black;
+	background-image: url(story-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
 }
 .about-title{
 	text-align: center;
